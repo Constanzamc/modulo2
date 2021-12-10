@@ -6,11 +6,30 @@
 	<title>tarea asincronica</title>
 </head>
 <body>
+	<h2>Tarea asincronica
+		operaciones matematicas</h2>
 
+		<p>valor<input type="text" name="v1" id="v1"></p><br>
+		<p>resultado<input type="text" name="res" id="res"></p><br>
+		<button onclick="diam();">diametro</button><button onclick="peri();">perimetro</button><button onclick="are();">area</button>
 
 	<script type="text/javascript">
+		function diam() {
+			let v1=document.getElementById('v1').value;
+			let res=parseInt(2)*parseInt(v1,10)
+
+			document.getElementById('res').value=res;
+		}
+		function peri(){
+			let v1=document.getElementById('v1').value;
+			let res=parseInt(2)*parseInt(Math.pi)*
+
+		}
+		function are(){
+
+		}
 		
-		
+
 	</script>
 
 </body>
