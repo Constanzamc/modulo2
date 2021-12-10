@@ -11,40 +11,40 @@
 
 	<p>valor 1:<input type="number" name="v1" id="v1"></p><br>
 	<p>valor 2:<input type="number" name="v2" id="v2"></p><br>
-	<p>resultado:<input type="number" name="res" id="res"></p>
-	<button onclick="sumar();">sumar</button>
-	<button onclick="restar();">restar</button>
-	<button onclick="dividir();">dividir</button>
-	<button onclick="multiplicar();">multiplicar</button>
+	<p>resultado:<input type="number" name="res" id="res"></p><br>
+	<button onclick="sum();">sumar</button><br>
+	<button onclick="res();">restar</button><br>
+	<button onclick="div();">dividir</button><br>
+	<button onclick="mul();">multiplicar</button><br>
 
 	<script type="text/javascript">
 		
 		
-		function sumar(){
+		function sum(){
 			let v1=document.getElementById('v1').value;
 			let v2=document.getElementById('v2').value;
-			let res=parseint(v1,10)+parseInt(v2,10);
+			let res=parseInt(v1,10)+parseInt(v2,10);
 
 			document.getElementById('res').value=res;
 		}
-		function restar(){
+		function res(){
 			let v1=document.getElementById('v1').value;
 			let v2=document.getElementById('v2').value;
-			let res=parseint(v1,10)-parseInt(v2,10);
+			let res=parseInt(v1,10)-parseInt(v2,10);
 
 			document.getElementById('res').value=res;
 		}
 		function dividir(){
 			let v1=document.getElementById('v1').value;
 			let v2=document.getElementById('v2').value;
-			let res=parseint(v1,10)/parseInt(v2,10);
+			let res=parseInt(v1,10)/parseInt(v2,10);
 
 			document.getElementById('res').value=res;
 		}
 		function multiplicar(){
 			let v1=document.getElementById('v1').value;
 			let v2=document.getElementById('v2').value;
-			let res=parseint(v1,10)*parseInt(v2,10);
+			let res=parseInt(v1,10)*parseInt(v2,10);
 
 			document.getElementById('res').value=res;
 		}
