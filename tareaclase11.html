@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tarea</title>
+</head>
+<body>
+	<h1>calcular valor a pagar</h1>
+
+	<table border="1" id="cont">
+
+		<ul>
+			<td>ingresar monto neto:</td><td><input type="text" name="net" id="net"></td><br>
+			<td>iva:</td><td><input type="text" name="iva" id="iva"></td><br>
+			<td>valor total a pagar:</td><td><input type="text" name="tot" id="tot"></td><br>
+		</ul>
+	</table>
+	<button onclick="calcular();">calcular</button>
+
+	<script type="text/javascript">
+		
+
+		function calcular(){
+			let net=document.getElementById('net').value;
+			let net1=parseInt(net,10);
+			const iva=net1*0.19
+			const total=net1+iva
+					
+
+
+			document.getElementById('iva').value=iva;
+			document.getElementById('tot').value=total;
+			document.getElementById('cont').innerHTML;
+			
+		}
+	</script>
+
+</body>
+</html>
