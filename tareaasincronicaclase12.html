@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tarea asincronica clase 12</title>
+</head>
+<body>
+
+	<p>
+		valor 1:<input type="text" name="v1" id="v1"><br>
+		<button onclick="evaluar();">evaluar</button><input type="text" name="res" id="res"><br>
+	</p>
+
+	<script type="text/javascript">
+		
+		function evaluar(){
+			let v1=document.getElementById('v1').value;
+			let vv1=parseInt(v1,10);
+
+			if ((vv1>10) && (vv1<20)) {
+				document.getElementById('res').value='cumple condición';
+			}else{
+				document.getElementById('res').value='no cumple condición'
+			}
+		}
+	</script>
+
+</body>
+</html>
