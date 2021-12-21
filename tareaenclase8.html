@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tarea clase 8</title>
+</head>
+<body>
+	<h1>calcular valor con IVA</h1>
+
+	monto bruto: <input type="text" name="v1" id="v1"><br>
+	<button onclick="iva();">Calcular IVA</button><br>
+	monto con IVA: <input type="text" name="res" id="res"><br>
+
+	<script type="text/javascript">
+		function iva(){
+			let v1=document.getElementById('v1').value;
+			document.getElementById('res').value=calcular(v1);
+
+		}
+		function calcular(v1){
+			let vv1=parseInt(v1,10);
+			let res=vv1*1.19
+			return res;
+		}
+	</script>
+
+</body>
+</html>
