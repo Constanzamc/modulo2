@@ -78,14 +78,14 @@
 		}
 		function mostrar(){
 			let fragmento="<table class='table table-striped'><tr><th>Item</th><th>Familia</th><th>Valor</th><th>Cantidad</th><th>Total Neto $</th><th>Total IVA $</th><th>Total Bruto $</th>";
-			for (var i=0; i < nombre.length; i++){
+			for (var i = 0; i < nombre.length; i++){
 				fragmento+="<tr><td>"+nombre[i]+"</td>";
 				fragmento+="<td>"+familia[i]+"</td>";
 				fragmento+="<td>"+valor[i]+"</td>";
 				fragmento+="<td>"+cantidad[i]+"</td>";
 				fragmento+="<td>"+totales(i)+"</td>";
 				fragmento+="<td>"+iva(i)+"</td>";
-				fragmento+="<td>"+bruto(i)+"</td></tr>"
+				fragmento+="<td>"+bruto(i)+"</td></tr>";
 			}
 			fragmento+="</table>";
 			document.getElementById('ar').innerHTML=fragmento;
