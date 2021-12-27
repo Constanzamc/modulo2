@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tarea asincronica</title>
+</head>
+<body>
+
+	<h1>multiplicaciones</h1>
+
+	<p>
+		
+		<button onclick="calcular();">Multiplicar</button><br>
+		<br>
+		Resultado:<input type="text" name="res" id="res">
+	</p>
+
+	<script type="text/javascript">
+
+		function calcular(){
+			let v1=parseInt(prompt("ingrese primer valor"));
+			let v2=parseInt(prompt("ingrese segundo valor"));
+			let res=0;
+			while(v2!=0){
+				res=res+v1;
+				v2=v2-1;
+			}
+			document.getElementById('res').value=res;
+			x++;
+			
+		}
+	</script>
+</body>
+</html>
